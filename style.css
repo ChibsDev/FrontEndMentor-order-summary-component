@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* ; */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.subtitle {
+    /* border: 1px solid red; */
+    padding: 0 20px;
+    line-height: 1.5rem;
+}
+
+.container {
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    min-width: 350px;
+    /* height: 500px; */
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 3px 34px 19px -15px rgba(199,208,247,1);
+    
+}
+
+.hero img {
+    width: 100%;
+}
+
+.text-component {
+    text-align: center;
+    padding: 5%;
+}
+
+.text-component h2 {
+    font-weight: 900;
+    margin-bottom:1rem;
+
+}
+
+.plan-component {
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem ;
+    background-color: var(--Very-pale-blue);
+    /* border: 1px solid red; */
+    align-items: center;
+    padding: 15px;
+    
+}
+
+
+.icon-price {
+    display: flex;
+    /* border: 1px solid red; */
+    gap: 10px;
+}
+
+.plan-component a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.proceed-btn {
+    display: block;
+    text-decoration: none;
+    color: #fff ;
+    background: var(--Bright-blue);
+    padding: 15px;
+    border-radius: 10px;
+    /* font-size: 12px; */
+    font-weight: 700;
+    margin: 30px 0;
+    box-shadow: -3px 25px 20px -3px rgba(221,218,247,1);
+}
+
+.proceed-btn:active {
+    background-color: var(--Desaturated-blue);
+
+}
+
+.cancel-link {
+    display: block;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    /* margin-top: 20px; */
+    margin-bottom: 15px;
+
+}
+
